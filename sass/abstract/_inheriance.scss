@@ -1,0 +1,12 @@
+.text-primary-gradient {
+  display: inline-block;
+  background: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+}

@@ -1,0 +1,52 @@
+@mixin composition_image {
+  &:hover {
+    transform: scale(0.95) translateX(-0.5rem);
+    outline: 8px solid $color-primary;
+    outline-offset: 2rem;
+    box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+    z-index: 10;
+  }
+}
+
+@mixin center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Responsive screen manage
+
+// 0-600  phone
+
+// 600-900 portrait tablet
+
+// 900-1200 landscape tablet
+
+// 1200> big desktop
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==p-tablet {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==l-tablet {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==big-desktop {
+    @media (max-width: 112.5em) {
+      @content;
+    }
+  }
+}

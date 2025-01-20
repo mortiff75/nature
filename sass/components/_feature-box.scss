@@ -1,0 +1,29 @@
+.feature-box {
+  background-color: rgba($color-white, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: all 0.2s ease-in;
+  &__icon {
+    font-size: 6rem;
+    color: $color-primary;
+    margin-bottom: 0.5rem;
+    transition: all 0.2s ease-in;
+    @extend .text-primary-gradient;
+
+    &:hover {
+      transform: skewY(8deg) skewX(-10deg);
+    }
+  }
+
+  &__text {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  &:hover {
+    transform: translateY(-2px) scale(1.1);
+  }
+}

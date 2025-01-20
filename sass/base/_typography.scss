@@ -1,0 +1,68 @@
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 30px;
+    animation: moveInLeft 1s;
+    backface-visibility: hidden;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    animation: moveInRight 1s;
+    backface-visibility: hidden;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  @extend .text-primary-gradient;
+
+  &:hover {
+    transform: skewY(-2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.flex-1 {
+  flex: $col-1;
+}
+
+.flex-2 {
+  flex: $col-2;
+}
+
+.flex-3 {
+  flex: $col-3;
+}
+
+.flex-4 {
+  flex: $col-4;
+}
