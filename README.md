@@ -4,7 +4,7 @@ A Nature Website Totally with css and sass
 
 ## Screenshots
 
-![App Screenshot](https://i.ytimg.com/vi/HFj5FMb0jwY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCqhaTIsLlqTvH46Hz00cEIafSfvw)
+![App Screenshot](<https://raw.githubusercontent.com/mortiff75/nature/refs/heads/main/assets/Screenshot%20(103).png>)
 
 ## Installation
 
